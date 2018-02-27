@@ -1,7 +1,8 @@
 class Pokemon
   attr_accessor :name, :type, :db
   
-  def initialize(hash)
-    hash.each{|key, value| self.send(("#{key}="), value)}
+  def initialize(:name, :type, :db)
+    @name = :name 
+    
   end 
 end
