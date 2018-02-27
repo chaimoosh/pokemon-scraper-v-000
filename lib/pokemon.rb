@@ -1,6 +1,5 @@
 class Pokemon
   attr_accessor :name, :type, :db, :id
-  @@all = []
   
   def initialize(name:, type:, db:, id:)
     local_variables.each do |k|
@@ -11,6 +10,5 @@ class Pokemon
   
   def self.save 
     pokemon = self.new
-    @@all << pokemon
   end 
 end
