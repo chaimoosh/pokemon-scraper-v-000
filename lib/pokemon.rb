@@ -6,10 +6,6 @@ class Pokemon
     @type = type
     @db = db
     @id = id
-    #local_variables.each do |k|
-    #  v = eval(k.to_s)
-    #  instance_variable_set("@#{k}", v) unless v.nil?
-    #end
   end
   
   def self.save(name, type, db) 
