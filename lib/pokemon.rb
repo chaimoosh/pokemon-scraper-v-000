@@ -8,7 +8,7 @@ class Pokemon
     end
   end
   
-  def self.save(name:, type:, db:, id:) 
-    pokemon = self.new(name:, type:, db:, id:)
+  def self.save(name, type, db) 
+    "INSERT INTO 
   end 
 end
