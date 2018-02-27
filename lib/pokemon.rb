@@ -10,6 +10,7 @@ class Pokemon
   end
   
   def self.save 
-    @@all << self
+    pokemon = self.new
+    @@all << pokemon
   end 
 end
