@@ -1,5 +1,6 @@
 class Pokemon
   attr_accessor :name, :type, :db, :id
+  @@all = []
   
   def initialize(name:, type:, db:, id:)
     local_variables.each do |k|
@@ -9,6 +10,6 @@ class Pokemon
   end
   
   def self.save 
-    
+    @@all << self
   end 
 end
