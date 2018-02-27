@@ -1,3 +1,9 @@
 class Pokemon
-  def intialize(name,)
+  attr_accessor :name, :type, :db
+  
+  def intialize(name, type, db)
+    @name = name
+    @type = type
+    @db = db 
+  end 
 end
